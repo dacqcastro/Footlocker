@@ -1,0 +1,37 @@
+/* Global */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/* Header Styles */
+
+
+header nav ul li {
+  display: inline-block;
+  padding-right: 16px;
+}
+
+header nav ul .last-li {
+  padding-right: 0;
+}
+
+header .first-nav {
+  background-color: #000;
+  text-align: right;
+  padding: 6px 10px 6px 0;
+  border-bottom: 1px solid #505050;
+}
+
+header .second-nav {
+  background-color: #000;
+  text-align: center;
+  padding: 16px 0;
+}
