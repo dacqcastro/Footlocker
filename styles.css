@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Varela Round', sans-serif;
 }
 
 a {
@@ -16,7 +17,8 @@ a {
 
 header nav ul li {
   display: inline-block;
-  padding-right: 16px;
+  padding-right: 18px;
+  font-weight: 900;
 }
 
 header nav ul .last-li {
@@ -26,14 +28,49 @@ header nav ul .last-li {
 header .first-nav {
   background-color: #000;
   text-align: right;
-  padding: 6px 10px 6px 0;
+  padding: 10px 16px 10px 0;
   border-bottom: 1px solid #505050;
+  font-size: 13px;
 }
 
 header .second-nav {
+  position: relative;
   background-color: #000;
   text-align: center;
-  padding: 16px 0;
+  padding: 24px 0;
+  width: 100%;
 }
 
-header .second-nav
+header .second-nav .logo img {
+  position: absolute;
+  top: 50%;
+  transform: perspective(1px) translateY(-50%);
+  left: 20px;
+}
+
+header .second-nav .search-bar {
+  position: absolute;
+  top: 50%;
+  transform: perspective(1px) translateY(-50%);
+  right: 20px;
+}
+
+header .second-nav .search-bar #search-box {
+  position: relative;
+  height: 40px;
+  padding-left: 10px;
+  width: 220px;
+}
+
+header .second-nav .search-bar #search-box::placeholder {
+  color: #000;
+  font-size: 18px;
+}
+
+header .second-nav .search-bar .search-icon {
+  position: absolute;
+  top: 50%;
+  transform: perspective(1px) translateY(-50%);
+  left: 208px;
+  color: #000;
+}
