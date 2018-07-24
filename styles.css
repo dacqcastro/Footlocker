@@ -3,7 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Varela Round', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -11,6 +11,45 @@ a {
   text-decoration: none;
 }
 
+.btn {
+  margin: 30px 0;
+  padding: 20px 50px;
+  border: none;
+  background-color: #e71836;
+  color: #fff;
+  transition: .5s;
+  font-size: 14px;
+}
+
+.btn:hover {
+  background-color: #000;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 56px;
+  padding-top: 40px;
+}
+
+.description {
+  padding: 25px 0;
+  color: #4f4f4f;
+  font-weight: normal;
+}
+
+.secondary {
+  margin: 10px 0 50px 0;
+}
+
+.third {
+  margin: 20px 0 40px 0;
+}
+
+.image-title {
+  font-size: 30px;
+  font-weight: normal;
+  padding-top: 20px;
+}
 
 /* Header Styles */
 
@@ -19,6 +58,7 @@ header nav ul li {
   display: inline-block;
   padding-right: 18px;
   font-weight: 900;
+  letter-spacing: 2px;
 }
 
 header nav ul .last-li {
@@ -30,7 +70,7 @@ header .first-nav {
   text-align: right;
   padding: 10px 16px 10px 0;
   border-bottom: 1px solid #505050;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 header .second-nav {
@@ -60,6 +100,7 @@ header .second-nav .search-bar #search-box {
   height: 40px;
   padding-left: 10px;
   width: 220px;
+  font-size: 20px;
 }
 
 header .second-nav .search-bar #search-box::placeholder {
@@ -73,4 +114,90 @@ header .second-nav .search-bar .search-icon {
   transform: perspective(1px) translateY(-50%);
   left: 208px;
   color: #000;
+}
+
+header .second-nav .search-bar .red:hover {
+  color: red;
+}
+
+
+/* display section */
+
+
+#display, #products, #grid-products {
+  text-align: center;
+}
+
+#display #title {
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 30px;
+}
+
+#display #image img {
+  width: 100%;
+}
+
+
+/* products Style */
+
+
+#products .image img {
+  width: 100%;
+}
+
+
+/* Grid products */
+
+
+#grid-products .grid-images {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  grid-gap: 50px 0;
+}
+
+#grid-products .grid-images .imgs {
+  width: 600px;
+  box-sizing: border-box;
+}
+
+#grid-products .second-grid-images {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  padding: 10px 0 40px 0;
+}
+
+#grid-products .second-grid-images img {
+  width: 280px;
+}
+
+#grid-products .third-grid-images {
+  text-align: left;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  padding: 10px 0 40px 0;
+  grid-gap: 70px 0;
+}
+
+#grid-products .third-grid-images img {
+  width: 400px;
+}
+
+#grid-products .third-grid-images p, #grid-products .third-grid-images h5 {
+  padding-left: 30px;
+}
+
+#grid-products .third-grid-images h5 {
+  color: #6f6f6f;
+  font-weight: lighter;
+}
+
+#grid-products .third-grid-images .last-img:hover {
+  cursor: pointer;
 }
