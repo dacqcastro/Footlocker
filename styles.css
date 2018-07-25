@@ -12,6 +12,7 @@ a {
 }
 
 .btn {
+  display: inline-block;
   margin: 30px 0;
   padding: 20px 50px;
   border: none;
@@ -181,7 +182,7 @@ header .second-nav .search-bar .red:hover {
   width: 100%;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
-  padding: 10px 0 40px 0;
+  padding: 80px 0 80px 0;
   grid-gap: 70px 0;
 }
 
@@ -200,4 +201,66 @@ header .second-nav .search-bar .red:hover {
 
 #grid-products .third-grid-images .last-img:hover {
   cursor: pointer;
+}
+
+
+/* Product page */
+
+
+.main-container {
+  padding: 24px 26px 75px;
+}
+
+.main-container #main-p {
+  font-size: 12px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  padding-bottom: 14px;
+}
+
+.main-container #main-p a {
+  color: red;
+}
+
+.main-container #product-info {
+  border: 1px solid #ddd;
+  padding: 30px;
+  overflow: hidden;
+}
+
+.main-container #product-info .product-image {
+  width: 65%;
+  float: left;
+  background: radial-gradient(circle at center,#f9f9f9 0,#f8f8f8 60%,#f0f0f0 75%)
+}
+
+.main-container #product-info .product-image img {
+  display: block;
+  margin: 0 auto;
+  width: 600px;
+}
+
+.main-container #product-info .product-selections {
+  width: 35%;
+  float: right;
+}
+
+.main-container #product-info .product-selections .inner-container {
+  padding-left: 20px;
+}
+
+.main-container #product-info .product-selections .image-title {
+  font-size: 32px;
+  padding: 0;
+}
+
+.main-container #product-info .product-selections .gender {
+  color: #77777777;
+  font-weight: lighter;
+  padding-top: 8px;
+}
+
+.main-container #product-info .product-selections .rating {
+  width: 100px;
+  padding-top: 20px;
 }
